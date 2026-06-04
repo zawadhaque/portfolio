@@ -261,3 +261,33 @@ function handleSubmit(e) {
   e.target.reset();
   setTimeout(function () { status.style.display = 'none'; }, 4000);
 }
+// ── Hamburger / mobile nav drawer
+(function () {
+  var btn    = document.getElementById('nav-hamburger');
+  var drawer = document.getElementById('nav-drawer');
+  if (!btn || !drawer) return;
+
+  function closeDrawer() {
+    btn.classList.remove('open');
+    drawer.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.addEventListener('click', function () {
+    var isOpen = drawer.classList.toggle('open');
+    btn.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Close when a drawer link is tapped
+  drawer.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!btn.contains(e.target) && !drawer.contains(e.target)) {
+      closeDrawer();
+    }
+  });
+})();
