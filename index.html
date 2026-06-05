@@ -1,410 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zawad Haque | Cybersecurity Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zawad Haque — Cybersecurity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <canvas id="binary-canvas"></canvas>
-  <div id="progress-bar"></div>
+<header>
+  <div class="bar">
+    <a href="#top" class="brand">Zawad Haque <span class="tag">Portfolio</span></a>
+    <nav class="nav">
+      <a href="#profile">About</a><a href="#cases">Work</a>
+      <a href="#credentials">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#hero" class="nav-logo">
-      <img src="./assets/logo.svg" alt="Logo" class="nav-logo-img" />
-      Zawad Haque
-    </a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<nav class="drawer" id="drawer">
+  <a href="#profile">About</a><a href="#cases">Work</a>
+  <a href="#credentials">Certifications</a><a href="#contact">Contact</a>
+</nav>
 
-  <!-- MOBILE DRAWER -->
-  <nav class="nav-drawer" id="nav-drawer">
-    <a href="#about"          class="drawer-link">About</a>
-    <a href="#projects"       class="drawer-link">Projects</a>
-    <a href="#research"       class="drawer-link">Research</a>
-    <a href="#certifications" class="drawer-link">Certifications</a>
-    <a href="#skills"         class="drawer-link">Skills</a>
-    <a href="#contact"        class="drawer-link">Contact</a>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-inner">
-      <div class="hero-glass">
-        <div class="hero-text">
-          <span class="hero-tag">Cybersecurity Analyst | SOC | Digital Forensics</span>
-          <h1 class="hero-name">Hi, I'm<br>Zawad Haque.</h1>
-          <p class="hero-sub">
-            <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact"  class="btn btn-outline">Get in Touch</a>
-          </div>
+<!-- COVER -->
+<section class="cover" id="top">
+  <div class="wrap">
+    <div class="cover-filemeta">
+      <span class="dot"></span>
+      <span>Portfolio</span>
+      <span class="spacer"></span>
+      <span>Blue Team · SOC · Forensics</span>
+    </div>
+    <div class="cover-grid">
+      <div>
+        <p class="cover-kicker">Cybersecurity Analyst</p>
+        <h1>Everything leaves a <em>trace.</em></h1>
+        <p class="cover-brief">
+          A working file on how I think about defense: the labs I've run, the research I've
+          written, and the habit underneath all of it — noticing the thing that's slightly off
+          and following it all the way down.
+        </p>
+        <div class="cover-index">
+          <div class="cell"><span class="n">01</span><span class="l">Incidents</span></div>
+          <div class="cell"><span class="n">02</span><span class="l">Labs</span></div>
+          <div class="cell"><span class="n">02</span><span class="l">Research</span></div>
+          <div class="cell"><span class="n">02</span><span class="l">Projects</span></div>
+          <div class="cell"><span class="n">02</span><span class="l">Certs</span></div>
         </div>
-        <div class="hero-headshot">
-          <img src="./assets/headshot.jpg" alt="Zawad Haque"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="headshot-placeholder" style="display:none;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
-            </svg>
+        <div class="cover-actions">
+          <a href="#cases" class="btn btn-solid">View work</a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-ghost">Résumé ↗</a>
+        </div>
+      </div>
+      <div class="cover-portrait">
+        <div class="frame">
+          <img src="assets/headshot.jpg" alt="Zawad Haque"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="ph" style="display:none;">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+            <small>assets/headshot.jpg</small>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <div class="section-wrapper">
-    <section id="about">
-      <p class="section-label">About Me</p>
-      <h2 class="section-title">About Me</h2>
-      <div class="divider"></div>
-      <div class="about-grid">
-        <div class="about-text fade-in">
-          <div class="about-text-glass">
-            <p>
-              Cybersecurity graduate from the University of Michigan with hands-on experience in SIEM analysis,
-              digital forensics, and incident response. Skilled in investigating threats through log correlation,
-              network traffic analysis, and system-level artifacts. Actively building real-world defensive security
-              skills through labs, research, and practical projects.
-            </p>
-            <br>
-            <a href="./assets/resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
+<!-- PROFILE -->
+<section class="section" id="profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">00</span><h2 class="sec-title">About</h2>
+      <p class="sec-sub">The short version of who's behind the work.</p>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-body">
+        <p>The first time I broke something on purpose, I was hijacking a logged-in session with a
+          few lines of cross-site script in a sophomore security course. It worked, and I sat
+          there a little stunned that something so small, so hidden, could quietly hand me
+          someone's account. I didn't want to just do it again. I wanted to know exactly <em>why</em>
+          it worked.</p>
+        <p>That's the thing that pulls me through this field: the moment a system stops being a
+          black box and you can see the machinery — what tripped the alert, where the packet really
+          went, which assumption the attacker leaned on. I chase that aha, and I've been chasing it
+          since I was a kid taking things apart just to understand how they held together.</p>
+        <p>I've pointed all of that at the defensive side, on purpose. A Cybersecurity &amp;
+          Information Assurance degree, hands-on BTL1 training in forensics, incident response, and
+          SIEM investigations, research into mobile TLS trust and the security of large language
+          models. I'm less interested in collecting tools than in the work underneath good defense:
+          catching the thing that's slightly off, following it all the way down, and writing it up
+          so the next person can see what I saw.</p>
+        <p>I'm headed for a SOC analyst seat now, with my sights set further out on purple teaming,
+          because what draws me is seeing it from both sides: attacker and defender at once.</p>
+      </div>
+      <dl class="about-side">
+        <dt>Now</dt><dd>SOC analyst · Incident response</dd>
+        <dt>Next</dt><dd>Cloud security analyst</dd>
+        <dt>Long-term</dt><dd>Purple team</dd>
+        <dt>Education</dt><dd>B.S. Cybersecurity &amp; Information Assurance</dd>
+        <dt>Based</dt><dd>Detroit, MI</dd>
+        <dt>Status</dt><dd>Open to entry-level blue team &amp; SOC roles</dd>
+      </dl>
+    </div>
+    <div class="diploma reveal">
+      <div class="diploma-img" onclick="openCert('assets/diploma.png','B.S. — Cybersecurity & Information Assurance')" style="cursor:zoom-in;">
+        <img src="assets/diploma.png" alt="Degree"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';this.parentElement.style.cursor='default';this.parentElement.removeAttribute('onclick');" />
+        <div class="ph" style="display:none;">assets/diploma.png</div>
+      </div>
+      <div class="diploma-text">
+        <div class="lbl">Education on file</div>
+        <h4>B.S. - Cybersecurity &amp; Information Assurance</h4>
+        <p>University of Michigan — Dearborn. The academic foundation underneath the cases below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE FILES -->
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">01</span><h2 class="sec-title">Work</h2>
+      <p class="sec-sub">Incident investigations, hands-on labs, research, and applied projects.</p>
+    </div>
+
+    <!-- INVESTIGATIONS -->
+    <div class="work-group">
+      <div class="work-group-label reveal">
+        <span class="txt">Investigations</span><span class="rule"></span><span class="count">01 on file</span>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">I-01</span>
+          <span class="case-class">Incident Response</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Security Incident Investigation (BTL1)</h3>
+            <p class="case-desc">Worked through the investigation labs in Blue Team Level 1: pulling apart
+              phishing emails, triaging alerts in a SIEM, following an intrusion through host and network logs,
+              and writing up what happened and what to do next. The point was the method, building a timeline
+              from scattered evidence and deciding what actually mattered, not just running the tools.</p>
+            <p class="case-note">How I approach an incident: evidence first, then a timeline, then a writeup the next analyst can act on.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Tools</span>
+            <span class="chip">SIEM</span><span class="chip">Phishing analysis</span><span class="chip">Log analysis</span><span class="chip">Incident response</span><span class="chip">Forensics</span>
           </div>
         </div>
-        <div class="about-stats fade-in">
-          <div class="stat-card glass-card">
-            <div class="stat-number" data-target="5" data-suffix="+">0</div>
-            <div class="stat-label">Security Projects Completed</div>
+      </article>
+    </div>
+
+    <!-- LABS -->
+    <div class="work-group">
+      <div class="work-group-label reveal">
+        <span class="txt">Labs</span><span class="rule"></span><span class="count">02 on file</span>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">L-01</span>
+          <span class="case-class">Privilege Escalation</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Attacking Set-UID Programs</h3>
+            <p class="case-desc">Worked through two attacks on privileged Set-UID programs. First I exploited a
+              stack buffer overflow to inject shellcode and land a root shell, then re-ran it against
+              address-space randomization, a non-executable stack, and StackGuard to see which countermeasures
+              held and why. Then I traced how environment variables like PATH and the dynamic linker can quietly
+              redirect a privileged program to attacker-controlled code, including capability leaking when it
+              shells out to external commands.</p>
           </div>
-          <div class="stat-card glass-card">
-            <div class="stat-number" data-target="2" data-suffix="">0</div>
-            <div class="stat-label">Research Areas</div>
+          <div class="case-stack">
+            <span class="stack-label">Tools</span>
+            <span class="chip">Buffer overflow</span><span class="chip">Shellcode</span><span class="chip">Set-UID</span><span class="chip">Environment variables</span><span class="chip">ASLR / StackGuard</span>
           </div>
-          <div class="stat-card glass-card">
-            <div class="stat-number" data-target="10" data-suffix="+">0</div>
-            <div class="stat-label">Tools &amp; Technologies</div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">L-02</span>
+          <span class="case-class">Web Security</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Cross-Site Scripting Worm (Elgg)</h3>
+            <p class="case-desc">Built a self-propagating XSS worm against a deliberately vulnerable build of the
+              Elgg social network, in the spirit of the 2005 Samy worm. Injected JavaScript into user profiles to
+              steal session cookies and auto-add the attacker as a friend, then turned on a Content Security
+              Policy to watch the same attack fail.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Tools</span>
+            <span class="chip">XSS</span><span class="chip">JavaScript</span><span class="chip">Session cookies</span><span class="chip">Ajax</span><span class="chip">CSP</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- RESEARCH -->
+    <div class="work-group">
+      <div class="work-group-label reveal">
+        <span class="txt">Research</span><span class="rule"></span><span class="count">02 on file</span>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">R-01</span>
+          <span class="case-class">Connected Vehicles</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Cybersecurity in Transportation Systems</h3>
+            <p class="case-desc">Co-authored a survey of 104 people on how everyday users perceive the security
+              of connected vehicles and intelligent transportation systems. Weighed awareness against real
+              concern: 74% saw connected vehicles as a significant privacy risk, yet only about a third knew the
+              mobile apps controlling vehicle functions could be insecure.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Topics</span>
+            <span class="chip">Connected vehicles</span><span class="chip">ITS</span><span class="chip">Survey research</span><span class="chip">Privacy</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">R-02</span>
+          <span class="case-class">AI Security</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Data Privacy Risks in Generative AI</h3>
+            <p class="case-desc">Co-authored hands-on research into data leakage from large language models. We
+              fine-tuned GPT-3.5 and GPT-4 on synthetic company data, then tried to pull it back out: GPT-3.5
+              gave up salaries and budgets in 12 of 20 trials once a request was framed as an audit, while GPT-4
+              held all 20. Documented prompt-leaking and access-control gaps, and proposed permission-scoped
+              models as a fix.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Topics</span>
+            <span class="chip">LLM security</span><span class="chip">Prompt leaking</span><span class="chip">Data exfiltration</span><span class="chip">GPT-3.5 / 4</span><span class="chip">Access control</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="work-group">
+      <div class="work-group-label reveal">
+        <span class="txt">Projects</span><span class="rule"></span><span class="count">02 on file</span>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">P-01</span>
+          <span class="case-class">Team Lead · Capstone</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Intel-a-Chat (Lascaux Llama)</h3>
+            <p class="case-desc">Led a four-person Agile team building a client-facing web application on Azure
+              with C# Blazor and an MVC architecture. Owned project management and client coordination while the
+              build delivered custom authentication, role-based access control, and CRUD workflows backed by
+              Azure SQL and Blob storage through stored procedures.</p>
+            <p class="case-note">Secure design thinking, plus the ability to lead and communicate.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Stack</span>
+            <span class="chip">C#</span><span class="chip">Blazor</span><span class="chip">Azure SQL</span><span class="chip">Azure Blob</span><span class="chip">RBAC</span><span class="chip">Scrum</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="case-id">P-02</span>
+          <span class="case-class">Mobile Security</span>
+        </div>
+        <div class="case-body">
+          <div class="case-main">
+            <h3 class="case-title">Mobile App TLS Trust Testing</h3>
+            <p class="case-desc">Tested how mobile apps protect data in transit, from two angles. Dynamically, I
+              stood up mitmproxy as a man-in-the-middle to inspect the live traffic of 10 apps across real iOS
+              and Android devices: three failed, one over plain HTTP, one exposing login credentials in the URL,
+              and one leaking credentials on Android while staying secure on iOS. Statically, I decompiled 10
+              cloud-storage Android apps and audited their Network Security Configuration files: none pinned
+              certificates, and several still allowed cleartext traffic or user-installed certificates, leaving
+              their traffic open to interception or tampering by an attacker on the same network.</p>
+          </div>
+          <div class="case-stack">
+            <span class="stack-label">Tools</span>
+            <span class="chip">mitmproxy</span><span class="chip">MITM</span><span class="chip">TLS</span><span class="chip">APK decompilation</span><span class="chip">NSC</span><span class="chip">iOS / Android</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="section" id="credentials">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">02</span><h2 class="sec-title">Certifications</h2>
+      <p class="sec-sub">Earned and in progress.</p>
+    </div>
+    <div class="certs-list reveal">
+
+      <div class="cert-row">
+        <div class="cert-badge-wrap">
+          <div class="cert-badge" onclick="openCert('assets/cert-secplus.jpg','CompTIA Security+')">
+            <img src="assets/cert-secplus.jpg" alt="CompTIA Security+ certificate"
+                 onerror="this.parentElement.classList.add('static');this.style.display='none';this.nextElementSibling.style.display='block';this.parentElement.removeAttribute('onclick');" />
+            <svg style="display:none" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <span class="zoom-hint"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg></span>
+          </div>
+          <div class="cert-preview"><img src="assets/cert-secplus.jpg" alt="" /></div>
+        </div>
+        <div class="cert-meta"><div class="cert-l">CompTIA Security+</div><div class="cert-org">CompTIA</div></div>
+        <div class="cert-r">Aug 2025</div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-badge-wrap">
+          <div class="cert-badge" onclick="openCert('assets/cert-btl1.jpg','Blue Team Level 1')">
+            <img src="assets/cert-btl1.jpg" alt="Blue Team Level 1 certificate"
+                 onerror="this.parentElement.classList.add('static');this.style.display='none';this.nextElementSibling.style.display='block';this.parentElement.removeAttribute('onclick');" />
+            <svg style="display:none" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <span class="zoom-hint"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg></span>
+          </div>
+          <div class="cert-preview"><img src="assets/cert-btl1.jpg" alt="" /></div>
+        </div>
+        <div class="cert-meta"><div class="cert-l">Blue Team Level 1</div><div class="cert-org">Security Blue Team</div></div>
+        <div class="cert-r">Mar 2026</div>
+      </div>
+
+      <div class="cert-program">
+        <div class="cert-program-head">
+          <div class="cert-program-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          </div>
+          <div class="cert-program-meta">
+            <div class="cert-program-name">SANS CyberLaunch</div>
+            <div class="cert-program-org">GIAC certification track</div>
+          </div>
+          <span class="cert-program-tag"><span class="d"></span>In progress</span>
+        </div>
+        <div class="cert-sublist">
+          <div class="cert-subrow">
+            <span class="nm">GIAC GFACT</span>
+            <span class="dt">Expected Aug 2026</span>
+          </div>
+          <div class="cert-subrow">
+            <span class="nm">GIAC GSEC</span>
+            <span class="dt">Expected Oct 2026</span>
           </div>
         </div>
       </div>
-    </section>
+
+    </div>
   </div>
+</section>
 
-  <!-- PROJECTS -->
-  <div class="section-wrapper">
-    <section id="projects">
-      <p class="section-label">My Work</p>
-      <h2 class="section-title">Projects</h2>
-      <div class="divider"></div>
-      <div class="projects-grid">
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeCert(event)">
+  <button class="lightbox-close" aria-label="Close" onclick="closeCert(event)">&times;</button>
+  <div>
+    <div class="lightbox-inner"><img id="lightbox-img" src="" alt="Certificate" /></div>
+    <p class="lightbox-cap" id="lightbox-cap"></p>
+  </div>
+</div>
 
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">SIEM · Splunk</span>
-          <div class="project-title">SIEM Log Analysis &amp; Threat Detection</div>
-          <p class="project-desc">
-            Investigated security events using Splunk by analyzing system and network logs. Developed SPL queries
-            to identify anomalies, reconstruct attack timelines, and perform root cause analysis across multiple
-            data sources including Sysmon and network logs.
-          </p>
-        </div>
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">Network · Wireshark</span>
-          <div class="project-title">Network Traffic Analysis (Wireshark)</div>
-          <p class="project-desc">
-            Conducted packet-level investigations using Wireshark to detect malicious activity. Identified
-            suspicious communications, extracted files from PCAPs, analyzed protocols and ports, and used
-            stream reconstruction to understand attacker behavior.
-          </p>
-        </div>
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">Mobile · Android Security</span>
-          <div class="project-title">Mobile Application Security Analysis</div>
-          <p class="project-desc">
-            Decompiled Android applications to evaluate SSL/TLS configurations, certificate pinning, and
-            Network Security Config implementations. Identified security gaps related to trust management,
-            cleartext traffic, and certificate validation.
-          </p>
-        </div>
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">Web Security · XSS</span>
-          <div class="project-title">Web Application Security (XSS Exploitation)</div>
-          <p class="project-desc">
-            Exploited cross-site scripting vulnerabilities in a web application to demonstrate session hijacking
-            and malicious script injection. Analyzed input validation weaknesses and security misconfigurations.
-          </p>
-        </div>
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">Full Stack · C# · Blazor · Azure</span>
-          <div class="project-title">Intel-a-Chat (Lascaux Llama)</div>
-          <p class="project-desc">
-            Served as team lead and project manager for a client-facing web application built with C#, Blazor,
-            Azure SQL, and GitHub. Delivered authentication, chat workflows, role-based access control, CRUD
-            operations, and POD-based data handling while coordinating with clients via Jira.
-          </p>
-        </div>
-
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-flex reveal">
+      <div>
+        <h2>Get in <em>touch.</em></h2>
+        <p class="contact-note">I'm open to entry-level blue team and SOC roles, and always glad to
+          talk shop with people who work in defense.</p>
       </div>
-    </section>
-  </div>
-
-  <!-- RESEARCH -->
-  <div class="section-wrapper">
-    <section id="research">
-      <p class="section-label">Academic Work</p>
-      <h2 class="section-title">Research</h2>
-      <div class="divider"></div>
-      <div class="projects-grid">
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">Mobile Security · TLS</span>
-          <div class="project-title">SSL/TLS Security in Mobile Applications</div>
-          <p class="project-desc">
-            Analyzed cloud storage applications to assess adoption of secure communication practices.
-            Evaluated certificate pinning, CA trust models, and Android security configurations.
-          </p>
-        </div>
-
-        <div class="project-card glass-card fade-in">
-          <span class="project-tag">AI Security · LLMs</span>
-          <div class="project-title">Large Language Models Security Research</div>
-          <p class="project-desc">
-            Explored security implications of LLMs, including potential vulnerabilities, misuse cases,
-            and defensive considerations in modern systems.
-          </p>
-        </div>
-
+      <div class="contact-links">
+        <a href="mailto:haque_zawad@outlook.com"><span>↳</span> haque_zawad@outlook.com</a>
+        <a href="https://www.linkedin.com/in/haque-zawad" target="_blank"><span>↳</span> LinkedIn</a>
+        <a href="https://github.com/zawadhaque" target="_blank"><span>↳</span> GitHub</a>
       </div>
-    </section>
+    </div>
   </div>
+</section>
 
-  <!-- CERTIFICATIONS -->
-  <div class="section-wrapper">
-    <section id="certifications">
-      <p class="section-label">Credentials</p>
-      <h2 class="section-title">Certifications</h2>
-      <div class="divider"></div>
-      <div class="certs-grid">
-
-        <div class="cert-card glass-card fade-in">
-          <div class="cert-overlay">
-            <img src="./assets/cert-secplus.jpg" alt="CompTIA Security+ certificate"
-                 class="cert-overlay-img"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="cert-overlay-placeholder" style="display:none;">Add cert-secplus.jpg to ./assets/</div>
-            <a href="https://www.credly.com/badges/4f3e4048-b103-4f29-a0a1-271df79d9de2/public_url" target="_blank" rel="noopener" class="cert-badge-btn">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/></svg>
-              Verify
-            </a>
-          </div>
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/>
-            </svg>
-          </div>
-          <div class="cert-body">
-            <div class="cert-name">CompTIA Security+</div>
-            <div class="cert-issuer">CompTIA</div>
-            <div class="cert-date">Aug 2025</div>
-          </div>
-        </div>
-
-        <div class="cert-card glass-card fade-in">
-          <div class="cert-overlay">
-            <img src="./assets/cert-btl1.jpg" alt="Blue Team Level 1 certificate"
-                 class="cert-overlay-img"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="cert-overlay-placeholder" style="display:none;">Add cert-btl1.jpg to ./assets/</div>
-            <a href="https://www.credly.com/badges/9d44b2f7-9aff-4c5d-b468-586f36209f68/public_url" target="_blank" rel="noopener" class="cert-badge-btn">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/></svg>
-              Verify
-            </a>
-          </div>
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/>
-            </svg>
-          </div>
-          <div class="cert-body">
-            <div class="cert-name">Blue Team Level 1 (BTL1)</div>
-            <div class="cert-issuer">Security Blue Team</div>
-            <div class="cert-date">Mar 2026</div>
-          </div>
-        </div>
-
-        <div class="cert-card glass-card fade-in">
-          <div class="cert-overlay">
-            <img src="./assets/cert-aws.jpg" alt="AWS Cloud Practitioner certificate"
-                 class="cert-overlay-img"
-                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="cert-overlay-placeholder" style="display:none;">Add cert-aws.jpg to ./assets/</div>
-            <a href="https://www.credly.com/" target="_blank" rel="noopener" class="cert-badge-btn">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/></svg>
-              Coming Soon
-            </a>
-          </div>
-          <div class="cert-icon">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l6 2.67V11c0 3.88-2.61 7.5-6 8.93-3.39-1.43-6-5.05-6-8.93V7.67L12 5z"/>
-            </svg>
-          </div>
-          <div class="cert-body">
-            <div class="cert-name">AWS Certified Cloud Practitioner</div>
-            <div class="cert-issuer">AWS</div>
-            <div class="cert-date">Expected: May 2026</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+<footer>
+  <div class="foot">
+    <span>© <span id="yr"></span> Zawad Haque</span>
+    <span>Built deliberately · No templates</span>
   </div>
+</footer>
 
-  <!-- SKILLS -->
-  <div class="section-wrapper">
-    <section id="skills">
-      <p class="section-label">Technical Expertise</p>
-      <h2 class="section-title">Skills</h2>
-      <div class="divider"></div>
-      <div class="skills-grid fade-in">
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">SIEM</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Splunk</span>
-          </div>
-        </div>
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">Network Analysis</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Wireshark</span>
-          </div>
-        </div>
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">Forensics</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Autopsy</span>
-            <span class="skill-tag">Volatility</span>
-          </div>
-        </div>
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">Operating Systems</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Windows</span>
-            <span class="skill-tag">Linux</span>
-          </div>
-        </div>
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">Security Concepts</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Incident Response</span>
-            <span class="skill-tag">Threat Detection</span>
-            <span class="skill-tag">Log Analysis</span>
-          </div>
-        </div>
-
-        <div class="skill-group glass-card">
-          <div class="skill-group-title">Programming</div>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">SQL</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="section-wrapper">
-    <section id="contact">
-      <p class="section-label">Contact</p>
-      <h2 class="section-title">Contact</h2>
-      <div class="divider"></div>
-      <div class="contact-inner">
-        <div class="contact-info fade-in">
-          <p>Feel free to reach out via email or connect with me on LinkedIn or GitHub.</p>
-          <div class="contact-links">
-            <a href="mailto:your-email@example.com" class="contact-link">
-              <span class="contact-link-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-              </span>
-              your-email@example.com
-            </a>
-            <a href="https://www.linkedin.com/in/haque-zawad" target="_blank" class="contact-link">
-              <span class="contact-link-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.447 20.452H17.01v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.583V9h3.305v1.561h.046c.461-.872 1.586-1.791 3.264-1.791 3.492 0 4.135 2.299 4.135 5.291v6.391zM5.337 7.433a1.917 1.917 0 1 1 0-3.834 1.917 1.917 0 0 1 0 3.834zm1.654 13.019H3.682V9h3.309v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                </svg>
-              </span>
-              linkedin.com/in/haque-zawad
-            </a>
-            <a href="https://github.com/zawadhaque" target="_blank" class="contact-link">
-              <span class="contact-link-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                </svg>
-              </span>
-              github.com/zawadhaque
-            </a>
-          </div>
-        </div>
-
-        <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your opportunity or project..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p id="form-status" style="font-size:0.85rem; color: var(--accent); display:none; margin-top:0.5rem;">
-            Message sent! I will get back to you soon.
-          </p>
-        </form>
-      </div>
-    </section>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; <span id="year"></span> Zawad Haque.</p>
-  </footer>
-
-  <script src="main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
